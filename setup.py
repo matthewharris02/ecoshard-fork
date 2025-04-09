@@ -14,8 +14,9 @@ LONG_DESCRIPTION = '%s\n\n%s' % (
 setup(
     name='ecoshard',
     setup_requires=['setuptools_scm'],
-    use_scm_version={'version_scheme': 'post-release',
-                     'local_scheme': 'node-and-date'},
+    # use_scm_version={'version_scheme': 'post-release',
+    #                  'local_scheme': 'node-and-date'},
+    install_requires=["requests","gdal","numpy","shapely","psutil","numexpr", "retrying", "scipy", "rtree"],
     description='EcoShard GIS data',
     long_description=LONG_DESCRIPTION,
     maintainer='Rich Sharp',
